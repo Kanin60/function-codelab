@@ -20,15 +20,11 @@ function gatherInputData() {
 
     const myDanishAmount = document.getElementById('danishAmount').value;
 
-
-
-
     makeExchange(myEuroRate, myDollarRate, myDanishAmount);
 }
 
 
-
-
+// FUNKTION 1 SOM KALDER EN FUNKTION TO GANGE MED FORSKELLIG DATA
 // håndterer data behandling  (controller code fra MVC)
 function makeExchange(myEuroRate, myDollarRate, myDanishAmount) {
 
@@ -56,5 +52,9 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 
 //  funktion der returnerer en veksel udregning skal skrives her
+function calculateExchange(DanishAmount, MyRate) {
+    let mitResultat = DanishAmount * MyRate;
 
+    return mitResultat;
+}
 

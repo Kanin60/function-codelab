@@ -38,10 +38,22 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 }
 
-/* skriv din kode herunder.
 
+// håndterer data behandling  (controller code fra MVC)
+function makeExchange(myEuroRate, myDollarRate, myDanishAmount) {
 
+    let myDollars = calculateExchange(myDanishAmount, myDollarRate);
+    let myEuros = calculateExchange(myDanishAmount, myEuroRate);
 
+    showResult(myEuros, myDollars, myDanishAmount);
+}
+
+//  funktion der returnerer en veksel udregning skal skrives her
+function calculateExchange(DanishAmount, MyRate) {
+    let mitResultat = DanishAmount * MyRate;
+
+    return mitResultat;
+}
 
 
 
