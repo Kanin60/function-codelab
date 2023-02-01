@@ -39,7 +39,7 @@ function calculateExchange(rate, myDanishAmount){
 
 
 
-// viser resultatet  (view code fra MVC)
+// viser resultatet  (view code fra MVC) (bare kopiret ind)
 function showResult(myEuroResult, myDollarResult, myDanishAmount) {
     const resultElement = document.getElementById('result');
     resultElement.innerHTML = myDanishAmount + ' danske kroner bliver til: ' + myEuroResult + ' euro og ' + myDollarResult + ' dollars';
