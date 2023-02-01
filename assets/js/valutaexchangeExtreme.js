@@ -9,10 +9,10 @@ knap.addEventListener("click", (e) => {
 
 //gatherInputData
 function gatherInputData(){
-    let euroRate = document.getElementById('euroRate');
-    let dollarRate = document.getElementById('dollarRate');
+    let euroRate = document.getElementById('euroRate').value;
+    let dollarRate = document.getElementById('dollarRate').value;
 
-    let danishAmount = document.getElementById('danishAmount');
+    let danishAmount = document.getElementById('danishAmount').value;
 
     makeExchange(euroRate,dollarRate,danishAmount);
 }
@@ -24,7 +24,7 @@ function makeExchange(euroRate,dollarRate,danishAmount){
     showResult(myEuroRate,myDollarRate, danishAmount);
 }
 //calculateExchange
-calculateExchange(myRate,danishAmount){
+function calculateExchange(myRate,danishAmount){
  let myResult = myRate * danishAmount;
 
  return myResult;
